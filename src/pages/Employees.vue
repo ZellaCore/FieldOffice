@@ -216,7 +216,7 @@
 </template>
 
 <script>
-import '../../node_modules/tailwindcss/dist/tailwind.min.css'
+
 import axios from 'axios';
 
 export default {
@@ -323,7 +323,7 @@ export default {
   },
   mounted(){
     this.getEmployees();
-    this.setUser();
+   
   }
 }
 </script>

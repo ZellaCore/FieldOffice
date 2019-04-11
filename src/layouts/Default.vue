@@ -26,6 +26,8 @@
                   </g-link>
                    <g-link class="nav__link text-white" to="/jir">Industrial Rates
                   </g-link>
+                   <g-link class="nav__link text-white" to="/team">Teams
+                  </g-link>
                   <!--g-link class="nav__link text-white" to="/carouse">Courses</g-link-->
                 </div>
                 <div >

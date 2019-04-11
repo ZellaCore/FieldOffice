@@ -46,7 +46,7 @@
 
 
 <script>
-import '../../node_modules/tailwindcss/dist/tailwind.min.css';
+
 
 import EmployeesList from '~/components/employee/EmployeesList.vue';
 import EmployeeProfile from '~/components/employee/EmployeeProfile.vue';

@@ -9,24 +9,23 @@ const axios = require('axios');
 module.exports = function (api) {
   api.loadSource(async store => {
     const { data } = await axios.get('http://192.168.0.17:15000/api/employee')
+   
 
     const contentType = store.addContentType({
       typeName: 'Employee',
-      route: '/remote_employee/:eid'
+      route: '/employee/:id'
     })
-    //console.log(data)
+   // console.log(data)
+   
     for (const item in data.objects) {
-      let path = `/remote_employee/${item.id}`;
+      let path = `/employee/${item.id}`;
       contentType.addNode({
         id: item.id,
         eid: item.eid,
         firstname: item.firstname,
         lastname: item.lastname,
         occupation: item.occupation,
-        path,
-        fields: {
-          body: item.registration
-        }
+        path
         
       })
     }
